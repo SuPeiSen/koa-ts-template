@@ -1,0 +1,26 @@
+{
+  "compilerOptions": {
+    "target": "ES2020", // 编译为 ES2020
+    "module": "CommonJS", // 使用 CommonJS 模块
+    "outDir": "./build",
+    "rootDir": "./src",
+    "strict": true, // 启用所有严格类型检查选项
+    "esModuleInterop": true, // 兼容 ES6 模块
+    "allowSyntheticDefaultImports": true, // 允许从没有设置默认导出的模块中默认导入
+    "skipLibCheck": true, // 跳过库文件的类型检查
+    "forceConsistentCasingInFileNames": true, // 强制一致的文件名大小写
+    "experimentalDecorators": true, // 启用实验性质的装饰器
+    "emitDecoratorMetadata": true,
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "baseUrl": "src",
+    "paths": {
+      "@/*": ["*"]
+    },
+    "allowJs": true
+  },
+  "types": ["node"],
+  "files": ["src/index.ts"],
+  "include": ["src/**/*"],
+  "exclude": ["node_modules"]
+}

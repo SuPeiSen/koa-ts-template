@@ -1,0 +1,38 @@
+{
+  // 使用 IntelliSense 了解相关属性。
+  // 悬停以查看现有属性的描述。
+  // 欲了解更多信息，请访问: https://go.microsoft.com/fwlink/?linkid=830387
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "node",
+      "name": "koa源码调试",
+      "request": "launch",
+      "program": "${workspaceFolder}/src/index.ts",
+      "runtimeArgs": [
+        "run-script",
+        "dev"
+      ],
+      "runtimeExecutable": "npm",
+      "skipFiles": [
+        "<node_internals>/**"
+      ],
+      "sourceMaps": true,
+    },
+    {
+      "type": "node",
+      "name": "koa产物调试",
+      "request": "launch",
+      "program": "${workspaceFolder}/build/index.js",
+      "runtimeArgs": [
+        "run-script",
+        "dev:js"
+      ],
+      "runtimeExecutable": "npm",
+      "skipFiles": [
+        "<node_internals>/**"
+      ],
+      "sourceMaps": true,
+    }
+  ]
+}
