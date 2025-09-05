@@ -12,4 +12,4 @@ npm run dev
 npm run build
 ```
 
-[doc](https://www.npmjs.com/package/koa-ts-core?activeTab=versions)
+[doc](https://www.npmjs.com/package/koa-ts-core)
