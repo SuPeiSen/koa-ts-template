@@ -1,6 +1,6 @@
 {
   "name": "koa-ts-template",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "main": "index.js",
   "scripts": {
     "dev": "koa-ts-cli dev",
@@ -16,7 +16,7 @@
     "koa": "^2.16.0",
     "koa-bodyparser": "^4.4.1",
     "koa-router": "^13.0.1",
-    "koa-ts-core": "0.0.5",
+    "koa-ts-core": "0.0.9",
     "koa2-cors": "^2.0.6",
     "mysql2": "^3.13.0",
     "reflect-metadata": "^0.2.2",
