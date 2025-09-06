@@ -16,7 +16,7 @@
     "joi": "^17.13.3",
     "koa": "^2.16.0",
     "koa-bodyparser": "^4.4.1",
-    "koa-ts-core": "0.0.10",
+    "koa-ts-core": "0.0.11",
     "koa2-cors": "^2.0.6",
     "mysql2": "^3.13.0",
     "reflect-metadata": "^0.2.2",

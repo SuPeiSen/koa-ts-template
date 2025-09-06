@@ -24,8 +24,8 @@ importers:
         specifier: ^4.4.1
         version: 4.4.1
       koa-ts-core:
-        specifier: 0.0.10
-        version: 0.0.10(rollup@4.50.0)
+        specifier: 0.0.11
+        version: 0.0.11(rollup@4.50.0)
       koa2-cors:
         specifier: ^2.0.6
         version: 2.0.6
@@ -800,13 +800,8 @@ packages:
     resolution: {integrity: sha512-asOvN6bFlSnxewce2e/DK3p4tltyfC4VM7ZwuTuepI7dEQVcvpyFuBcEARu1+Hxg8DIwytce2n7jrZtRlPrARA==}
     engines: {node: '>= 10'}
 
-  koa-router@13.1.1:
-    resolution: {integrity: sha512-3GxRi7CxEgsfGhdFf4OW4OLv0DFdyNl2drcOCtoezi+LDSnkg0mhr1Iq5Q25R4FJt3Gw6dcAKrcpaCJ7WJfhYg==}
-    engines: {node: '>= 18'}
-    deprecated: 'Please use @koa/router instead, starting from v9! '
-
-  koa-ts-core@0.0.10:
-    resolution: {integrity: sha512-Dh/veisRKhIbbPHik9DbkvJfkX2pr2U0zX/VkZ7b62e9QqaLNwmn5qMQTRBcjCIX+Cn8yYlYF74Sgk8uFLV5kA==}
+  koa-ts-core@0.0.11:
+    resolution: {integrity: sha512-F/MQ1J8kHK0a1V64MYUqPmN2oILXaA61jBlP0+qn6wkAioF9FWVNSOmzr6Ab0kHm2PGRTQno+kR334rjZaEFrA==}
     engines: {node: '>=14.0.0'}
 
   koa2-cors@2.0.6:
@@ -919,9 +914,6 @@ packages:
   path-scurry@1.11.1:
     resolution: {integrity: sha512-Xa4Nw17FS9ApQFJ9umLiJS4orGjm7ZzwUrwamcGQuHSzDyth9boKDaycYdDcZDuqYATXw4HFXgaqWTctW/v1HA==}
     engines: {node: '>=16 || 14 >=14.18'}
-
-  path-to-regexp@6.3.0:
-    resolution: {integrity: sha512-Yhpw4T9C6hPpgPeA28us07OJeqZ5EzQTkbfwuhsUg0c237RomFoETJgmp2sa3F/41gfLE6G5cqcYwznmeEeOlQ==}
 
   path-to-regexp@8.3.0:
     resolution: {integrity: sha512-7jdwVIRtsP8MYpdXSwOS0YdD0Du+qOoF/AEPIt88PcCFrZCzx41oxku1jD88hZBwbNUIEfpqvuhjFaMAqMTWnA==}
@@ -2052,21 +2044,12 @@ snapshots:
       co: 4.6.0
       koa-compose: 4.1.0
 
-  koa-router@13.1.1:
+  koa-ts-core@0.0.11(rollup@4.50.0):
     dependencies:
-      debug: 4.4.1
-      http-errors: 2.0.0
-      koa-compose: 4.1.0
-      path-to-regexp: 6.3.0
-    transitivePeerDependencies:
-      - supports-color
-
-  koa-ts-core@0.0.10(rollup@4.50.0):
-    dependencies:
+      '@koa/router': 14.0.0
       dotenv: 16.6.1
       koa: 2.16.2
       koa-bodyparser: 4.4.1
-      koa-router: 13.1.1
       portfinder: 1.0.37
       pug: 3.0.3
       rollup-plugin-pug: 1.1.1(rollup@4.50.0)
@@ -2180,8 +2163,6 @@ snapshots:
     dependencies:
       lru-cache: 10.4.3
       minipass: 7.1.2
-
-  path-to-regexp@6.3.0: {}
 
   path-to-regexp@8.3.0: {}
 
