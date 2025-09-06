@@ -8,6 +8,9 @@ importers:
 
   .:
     dependencies:
+      '@koa/router':
+        specifier: ^14.0.0
+        version: 14.0.0
       dotenv:
         specifier: ^16.4.7
         version: 16.6.1
@@ -20,9 +23,6 @@ importers:
       koa-bodyparser:
         specifier: ^4.4.1
         version: 4.4.1
-      koa-router:
-        specifier: ^14.0.0
-        version: 14.0.0
       koa-ts-core:
         specifier: 0.0.10
         version: 0.0.10(rollup@4.50.0)
@@ -115,6 +115,10 @@ packages:
 
   '@jridgewell/trace-mapping@0.3.9':
     resolution: {integrity: sha512-3Belt6tdc8bPgAtbcmdtNJlirVoTmEb5e2gC94PnkwEW9jI6CAHUeoG85tjWP5WquqfavoMtMwiG4P926ZKKuQ==}
+
+  '@koa/router@14.0.0':
+    resolution: {integrity: sha512-LBSu5K0qAaaQcXX/0WIB9PGDevyCxxpnc1uq13vV/CgObaVxuis5hKl3Eboq/8gcb6ebnkAStW9NB/Em2eYyFA==}
+    engines: {node: '>= 20'}
 
   '@pkgjs/parseargs@0.11.0':
     resolution: {integrity: sha512-+1VkjdD0QBLPodGrJUeqarH8VAIvQODIbwh9XpP5Syisf7YoQgsJKPNFoqqLQlu+VQ/tVSshMR6loPMn8U+dPg==}
@@ -801,11 +805,6 @@ packages:
     engines: {node: '>= 18'}
     deprecated: 'Please use @koa/router instead, starting from v9! '
 
-  koa-router@14.0.0:
-    resolution: {integrity: sha512-Ue8f/PRsLLNm6b7y+eS6xkqvsG2xH11d2VB1HPcfdfW6p5736kCHf2pXaq8q9XPQ01x0Dk7V/P5Il9pe+tGTxA==}
-    engines: {node: '>= 20'}
-    deprecated: 'Please use @koa/router instead, starting from v9! '
-
   koa-ts-core@0.0.10:
     resolution: {integrity: sha512-Dh/veisRKhIbbPHik9DbkvJfkX2pr2U0zX/VkZ7b62e9QqaLNwmn5qMQTRBcjCIX+Cn8yYlYF74Sgk8uFLV5kA==}
     engines: {node: '>=14.0.0'}
@@ -1414,6 +1413,15 @@ snapshots:
     dependencies:
       '@jridgewell/resolve-uri': 3.1.2
       '@jridgewell/sourcemap-codec': 1.5.5
+
+  '@koa/router@14.0.0':
+    dependencies:
+      debug: 4.4.1
+      http-errors: 2.0.0
+      koa-compose: 4.1.0
+      path-to-regexp: 8.3.0
+    transitivePeerDependencies:
+      - supports-color
 
   '@pkgjs/parseargs@0.11.0':
     optional: true
@@ -2050,15 +2058,6 @@ snapshots:
       http-errors: 2.0.0
       koa-compose: 4.1.0
       path-to-regexp: 6.3.0
-    transitivePeerDependencies:
-      - supports-color
-
-  koa-router@14.0.0:
-    dependencies:
-      debug: 4.4.1
-      http-errors: 2.0.0
-      koa-compose: 4.1.0
-      path-to-regexp: 8.3.0
     transitivePeerDependencies:
       - supports-color
 
