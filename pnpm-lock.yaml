@@ -24,8 +24,8 @@ importers:
         specifier: ^4.4.1
         version: 4.4.1
       koa-ts-core:
-        specifier: 0.0.14
-        version: 0.0.14(rollup@4.50.0)
+        specifier: 0.0.15
+        version: 0.0.15(rollup@4.50.0)
       koa2-cors:
         specifier: ^2.0.6
         version: 2.0.6
@@ -800,8 +800,8 @@ packages:
     resolution: {integrity: sha512-asOvN6bFlSnxewce2e/DK3p4tltyfC4VM7ZwuTuepI7dEQVcvpyFuBcEARu1+Hxg8DIwytce2n7jrZtRlPrARA==}
     engines: {node: '>= 10'}
 
-  koa-ts-core@0.0.14:
-    resolution: {integrity: sha512-2aAPtm6lwBWgB1Kkh5J14hyQlxXY0mgSl63hjiwQ3sIsnaY3xiIztRZjlWOAsdATwbf7YW91vKEy2vPAKpMMsg==}
+  koa-ts-core@0.0.15:
+    resolution: {integrity: sha512-B1MUXg7YAPnOwyjwDLLQejvm5vFdc9yqGDa+B7UJjZBylk9wSYQ3BbemzcuopJ3F5/v6iFUAZadAtDPIY8u9lw==}
     engines: {node: '>=14.0.0'}
 
   koa2-cors@2.0.6:
@@ -2044,7 +2044,7 @@ snapshots:
       co: 4.6.0
       koa-compose: 4.1.0
 
-  koa-ts-core@0.0.14(rollup@4.50.0):
+  koa-ts-core@0.0.15(rollup@4.50.0):
     dependencies:
       '@koa/router': 14.0.0
       dotenv: 16.6.1
