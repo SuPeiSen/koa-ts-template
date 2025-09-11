@@ -1,0 +1,11 @@
+version: '3.8'
+services:
+  app:
+    container_name: {{template_container_name}}
+    build: 
+      context: .
+    ports:
+      - "8005:8007"
+    restart: always
+    volumes:
+      - ./env:/app/build/env

@@ -12,4 +12,16 @@ npm run dev
 npm run build
 ```
 
+## doc
+
+```bash
+npm run doc
+```
+
+## docker
+
+```bash
+docker compose up -d
+```
+
 [doc](https://www.npmjs.com/package/koa-ts-core)
