@@ -20,7 +20,7 @@
     "koa2-cors": "^2.0.6",
     "mysql2": "^3.13.0",
     "reflect-metadata": "^0.2.2",
-    "typeorm": "^0.3.21"
+    "typeorm": "^0.3.26"
   },
   "devDependencies": {
     "@types/koa": "^2.15.0",

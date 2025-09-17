@@ -36,7 +36,7 @@ importers:
         specifier: ^0.2.2
         version: 0.2.2
       typeorm:
-        specifier: ^0.3.21
+        specifier: ^0.3.26
         version: 0.3.26(mysql2@3.14.4)(reflect-metadata@0.2.2)(ts-node@10.9.2(@types/node@22.18.1)(typescript@5.9.2))
     devDependencies:
       '@types/koa':
