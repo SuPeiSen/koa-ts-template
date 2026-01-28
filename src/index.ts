@@ -1,5 +1,5 @@
 import Koa from 'koa';
-import { createKoaApp } from 'koa-ts-core';
+import { BaseException, createKoaApp, errorRsp, unSuccessRsp } from 'koa-ts-core';
 
 async function bootstrap() {
   const [app] = await createKoaApp({
@@ -18,12 +18,19 @@ async function bootstrap() {
     error: {
       // 自定义错误处理函数
       handler: (error, ctx) => {
-        console.error('Global error:', error);
-        // 这里可以做统一日志、告警上报等
-      }
+        if (error instanceof BaseException) {
+          if (error.statusCode === 403) {
+            return errorRsp(error.statusCode);
+          }
+          return unSuccessRsp({
+            message: error.message,
+            code: error.code
+          });
+        }
+      },
       // 是否在响应中暴露堆栈（默认：非生产环境为 true，生产为 false）
-      // exposeStack: process.env.NODE_ENV !== "production",
-    },
+      exposeStack: process.env.NODE_ENV !== 'production'
+    }
 
     // 日志配置
     log: {
@@ -64,6 +71,21 @@ async function bootstrap() {
 
       // header 名称（默认 "x-request-id"）
       headerName: 'x-request-id'
+    },
+
+    // Swagger 配置
+    swagger: {
+      // 是否启用 swagger
+      enabled: true,
+      path: '/swagger',
+      securitySchemes: {
+        BearerAuth: {
+          type: 'http',
+          scheme: 'bearer',
+          bearerFormat: 'JWT', // Optional, hint to the client
+          description: "Enter your JWT token (without 'Bearer ' prefix) in the box."
+        }
+      }
     }
 
     /**
