@@ -1,42 +1,38 @@
+import { ApiDoc } from "koa-ts-core";
 export default class Test {
-  static desc = '';
-  get_test() {
+  static desc = "";
+  get_test(): ApiDoc {
     return {
-      method: 'get',
-      description: '',
-      path: '/get_test',
-      request: {
-        header: { 'Content-Type': 'application/json', Authorization: '' },
-        body: {},
-        query: {}
-      },
-      response: { body: {} }
+      method: "get",
+      path: "/get_test",
+      summary: "",
+      tags: [],
+      parameters: [],
+      requestBody: { content: {} },
+      responses: {},
     };
   }
-  get_() {
+  get_(): ApiDoc {
     return {
-      method: 'get',
-      description: '',
-      path: '/get_',
-      request: {
-        header: { 'Content-Type': 'application/json', Authorization: '' },
-        body: {},
-        query: {}
-      },
-      response: { body: {} }
+      method: "get",
+      path: "/get_",
+      summary: "",
+      tags: [],
+      parameters: [],
+      requestBody: { content: {} },
+      responses: {},
     };
   }
-  delete_test() {
+  delete_test(): ApiDoc {
     return {
-      method: 'delete',
-      description: '',
-      path: '/delete_test',
-      request: {
-        header: { 'Content-Type': 'application/json', Authorization: '' },
-        body: {},
-        query: {}
-      },
-      response: { body: {} }
+      method: "delete",
+      path: "/delete_test",
+      summary: "",
+      tags: [],
+      parameters: [],
+      requestBody: { content: {} },
+      responses: {},
+      security: [],
     };
   }
 }

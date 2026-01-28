@@ -1,42 +1,38 @@
+import { ApiDoc } from 'koa-ts-core';
 export default class User {
-  static desc = '用户';
-  get_test() {
+  static desc = '';
+  get_test(): ApiDoc {
     return {
       method: 'get',
-      description: '用户测试',
       path: '/get_test',
-      request: {
-        header: { 'Content-Type': 'application/json', Authorization: '' },
-        body: {},
-        query: {}
-      },
-      response: { body: {} }
+      summary: '',
+      tags: [],
+      parameters: [],
+      requestBody: { content: {} },
+      responses: {}
     };
   }
-  post_test() {
+  post_test(): ApiDoc {
     return {
       method: 'post',
-      description: '',
       path: '/post_test',
-      request: {
-        header: { 'Content-Type': 'application/json', Authorization: '' },
-        body: {},
-        query: {}
-      },
-      response: { body: {} }
+      summary: '',
+      tags: [],
+      parameters: [],
+      requestBody: { content: {} },
+      responses: {},
+      security: []
     };
   }
-  put() {
+  put(): ApiDoc {
     return {
-      method: 'get',
-      description: '',
+      method: 'put',
       path: '/put',
-      request: {
-        header: { 'Content-Type': 'application/json', Authorization: '' },
-        body: {},
-        query: {}
-      },
-      response: { body: {} }
+      summary: '',
+      tags: [],
+      parameters: [],
+      requestBody: { content: {} },
+      responses: {}
     };
   }
 }
